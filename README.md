@@ -13,19 +13,19 @@ Default options:
 
 ```js
 {
-    // Add offset from the top of the element
+    // [number] Add offset from the top of the element
     offsetTop		: null,
     
-    // Add offset from the bottom of the element
+    // [number] Add offset from the bottom of the element
     offsetBottom	: null,
     
-    // Allows use of custom class
+    // [string] Allows use of custom class
     customClass		: 'onScreen',
     
-    // Removes the class when the elements leaves the screen upwards
+    // [boolean] Removes the class when the elements leaves the screen upwards
     removeAfter  	: false,
     
-    // If set to true, the plugin will only run once
+    // [boolean] If set to true, the plugin will only run once
     runOnce  		: false,
 }
 ```
