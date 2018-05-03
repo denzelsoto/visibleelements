@@ -33,7 +33,8 @@
 
 		/* Applies the condition to each elements */
 		selector.each(function(){
-
+			
+			/* Prevent script from running more than once if runOnce is set to true */
 			if( (set.runOnce == true && !($(this).hasClass(set.customClass))) || set.runOnce == false ){
 				/* count callback each element */
 				x++;
