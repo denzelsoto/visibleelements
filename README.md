@@ -1,6 +1,6 @@
 # VisibleElements
 
-VisibleElmenents is lightweight jQuery plugin that allows users to check if the element is currently inside the viewport. The plugin simply adds a class to the specified element if it's currently visible on the viewport. This allows more flexibily since there are no specified styles and does not manipulate the DOM structure.
+VisibleElements is lightweight jQuery plugin that allows users to check if the element is currently inside the viewport. The plugin simply adds a class to the specified element if it's currently visible on the viewport. This allows more flexibily since there are no specified styles and does not manipulate the DOM structure.
 
 ## Demo
 
