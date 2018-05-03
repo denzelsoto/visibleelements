@@ -1,35 +1,35 @@
 /**
- *  jQuery Visible ELements Plugin
+ * jQuery Visible ELements Plugin
  *
- *	By: Denzel Van Soto
- *  (c) http://denzelsoto.com/
+ * By: Denzel Van Soto
+ * (c) http://denzelsoto.com/
  *
- *  MIT licensed
+ * MIT licensed
  *	
- *	Copright 2018 Denzel Soto
- *	V 1.0
+ * Copright 2018 Denzel Soto
+ * V 1.0
  */
 (function($) {
 
 	var countIsOnScreen	= []; // prevents the call back to trigger twice
 
 	/* ===== Declares the plugin function ===== */
-    $.fn.visibleElements = function( options ) {
+	$.fn.visibleElements = function( options ) {
 
-    	/* Declares the options and variables in the plugin */
-    	var set			= $.extend({
+		/* Declares the options and variables in the plugin */
+		var set			= $.extend({
 
-            offsetTop		: null, 			// Add offset from the top of the element
-            offsetBottom	: null, 			// Add offset from the bottom of the element
-            customClass		: 'onScreen', 		// Allows use of custom class
-            removeAfter  	: false, 			// Removes the class when the elements leaves the screen upwards
-            runOnce  		: false, 			// If set to true, the plugin will only run once
-            isOnScreen		: function() {} 	// Call a function when element is on screen
+		    offsetTop		: null, 		// Add offset from the top of the element
+		    offsetBottom	: null, 		// Add offset from the bottom of the element
+		    customClass		: 'onScreen', 		// Allows use of custom class
+		    removeAfter  	: false, 		// Removes the class when the elements leaves the screen upwards
+		    runOnce  		: false, 		// If set to true, the plugin will only run once
+		    isOnScreen		: function() {} 	// Call a function when element is on screen
 
-        }, options),
+		}, options),
         	win 		= $(window),
-            selector 	= $(this),
-            x			= 0;
+		selector 	= $(this),
+		x 		= 0;
 
 		/* Applies the condition to each elements */
 		selector.each(function(){
@@ -45,16 +45,16 @@
 
 		});
 
-    }
+	}
 
-    /* ===== Declares the main function ===== */
+	/* ===== Declares the main function ===== */
 	function checkElments( selectorEl, win, set, x ) {
 
 		/* Declares the functions variable for each elements */
-		var elTop			= selectorEl.offset().top,
-			elHeight		= selectorEl.innerHeight(),
-			elOffsetTop		= elTop,
-			elOffsetBottom	= elTop + elHeight;
+		var elTop		= selectorEl.offset().top,
+		elHeight		= selectorEl.innerHeight(),
+		elOffsetTop		= elTop,
+		elOffsetBottom		= elTop + elHeight;
 
 		/* Checks the current position of the window */
 		winT = win.scrollTop();
