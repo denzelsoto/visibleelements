@@ -1,4 +1,4 @@
-# VisiblEelements
+# VisibleEelements
 
 VisibleElmenents is lightweight jQuery plugin that allows users to check if the element is currently inside the viewport. The plugin simply adds a class to the specified element if it's currently visible on the viewport. This allows more flexibily since there are no specified styles and does not manipulate the DOM structure.
 
@@ -55,4 +55,4 @@ $('.element').visibleElements({
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
